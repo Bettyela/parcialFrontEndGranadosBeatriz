@@ -9,13 +9,13 @@ function App() {
     artista: ''
   })
 
-  const [mostrar, setMostrar] = useState(false)
+  const [mostrar, setMostrar] = useState(true)
 
 
   return (
     <>
       <div className="App">
-        {mostrar  && <Card nombre={usuario.nombre} artista={usuario.artista}/> }
+        {mostrar  && <Card nombre={usuario.nombre} artista={usuario.artista}/>}
         <Form setMostrar={setMostrar} setUsuario={setUsuario}/>  
       </div>        
     </>
